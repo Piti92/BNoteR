@@ -18,19 +18,29 @@ public class Database {
     int index = 0;
     public Database()
     {
-        this.lista = new ArrayList<Rekord>();
+        this.lista = new ArrayList<>();
     }
-    public void add(){
-        lista.add(new Rekord(lista.size(), "element0"));
+    void triggerAdd()   {
+        AddRecordFrame arf = new AddRecordFrame(lista.size());
+        arf.setVisible(true);
     }
-    public void remove(){}
-    public void edit(){}
-    public void showAll(){
-        for (int i = 0; i < lista.size(); i++) {
-            System.out.println(lista.get(i).id + " " + lista.get(i).date);
-        }
+    void triggerEdit()  {
+    EditRecordFrame erf = new EditRecordFrame();
+        erf.setVisible(true);
     }
-    public void showSpecified(){}
-    public void save(){}
-    public void load(){}
+    void triggerDelete(){
+    DeleteRecordFrame drf = new DeleteRecordFrame();
+        drf.setVisible(true);
+    }
+    
+    void remove(){}
+    void showAll(){}
+    void showSpecified(){}
+    void save(){}
+    void load(){}
+    void addRecord(Rekord r)
+    {
+        lista.add(r);
+    }
+    
 }

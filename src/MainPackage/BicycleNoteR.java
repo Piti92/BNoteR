@@ -15,9 +15,10 @@ public class BicycleNoteR {
     
     public static void main(String[] args) {
         showIntro();
-        if (JOptionPane.showConfirmDialog(null, "Czy posiadasz baze danych gotową do załadowania?") == 0) //1-false, 2-true
+        if (JOptionPane.showConfirmDialog(null, "Would you like to load base from file?") == 0) //1-false, 0-true
         {
             database = new Database();
+            // upload file
         } else {
             database = new Database();
         }

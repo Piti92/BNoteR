@@ -29,7 +29,7 @@ public class Rekord {
     }
 
     private double countAvg() {
-        double x = distance / (timeHours + (timeMins/60));
+        double x = distance / (timeHours + (timeMins/60)); 
         return x;
     }
 

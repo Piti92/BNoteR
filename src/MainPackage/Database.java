@@ -38,8 +38,7 @@ public class Database {
     void showSpecified(){}
     void save(){}
     void load(){}
-    void addRecord(Rekord r)
-    {
+    void addRecord(Rekord r){
         lista.add(r);
     }
     

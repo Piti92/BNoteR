@@ -40,6 +40,8 @@ public class Database {
     void load(){}
     void addRecord(Rekord r){
         lista.add(r);
+        index++;
+        
     }
     
 }

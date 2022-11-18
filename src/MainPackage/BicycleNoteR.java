@@ -24,6 +24,7 @@ public class BicycleNoteR {
         }
         Frame frame = new Frame();
         frame.setVisible(true);
+        System.out.println("xdd");
     }
 
     private static void showIntro() {
